@@ -23,21 +23,21 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "Raushan Kr"
+    name: "TEAM HVL"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Raushan Kr"
+    name: "TEAM HVL"
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
-    name: "Raushan Kr",
+    name: "TEAM HVL",
     helpText: "click here for help!"
   });
 });
@@ -81,7 +81,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Raushan Kr",
+    name: "TEAM HVL",
     errorMsg: "help article not found!"
   });
 });
@@ -89,7 +89,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Raushan Kr",
+    name: "TEAM HVL",
     errorMsg: "Page not found!"
   });
 });
